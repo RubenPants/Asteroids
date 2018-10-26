@@ -1,0 +1,54 @@
+
+def f1 {
+  return $1;
+}
+
+true := 100;
+
+x := ( 3 * 4 ); // comment
+// comment
+y := (-33.5 * (+55 + 1.22));
+
+thrust;
+turn( 5 ) ;
+fire;
+
+if (x < 5) 
+ { skip; }
+else
+ { fire; }
+
+while (0 < y)
+ { thrust;
+   y := (f1(y) + -(-1));
+   z := f2(y, 15);
+   u := z + self;
+ }
+
+false := f3(true);     // type error
+
+while (y < 100)
+ { thrust;
+   y := (-y + 1);
+   if (true) {skip; }  // type error
+   else {
+     break;
+     while (false)     // type error
+       {skip;}
+     break;
+   }
+   return y;
+ }
+
+
+def f2 {
+  return $1 + $2;
+}
+
+def f3 {
+  while ($1) {
+    fire;
+  }
+}
+
+

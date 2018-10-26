@@ -1,0 +1,9 @@
+def incr {
+  return $1 + $2;
+}
+d := 0.2;
+while (1 < 2) {
+  turn d;
+  d := incr(d,0.1);
+  fire;
+}
